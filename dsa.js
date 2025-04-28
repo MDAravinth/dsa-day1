@@ -102,3 +102,31 @@ console.log(bitwise(2))
 console.log(bitwise(3))
 console.log(bitwise(4))
 console.log(bitwise(5))
+
+
+/////////////////////    RECURSIVE FIBONACCI SEQUENCE   /////////////////////
+
+function recursion(n) {
+    if (n < 2) {
+        return n
+    }
+    return recursion(n - 1) + recursion(n - 2)
+}
+
+console.log(recursion(6))
+
+
+/////////////////////////    RECURSIVE FACTORIAL SERIES  //////////////////////
+
+
+function recFac(n) {
+    if (n === 0) {
+        return 1
+    }
+    return n * recFac(n - 1)
+}
+
+console.log(recFac(5))
+
+
+/////////////////////////  SUM OF RECUSRSION               ///////////////////////
