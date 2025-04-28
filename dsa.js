@@ -113,7 +113,7 @@ function recursion(n) {
     return recursion(n - 1) + recursion(n - 2)
 }
 
-console.log(recursion(6))
+console.log(recursion(0))
 
 
 /////////////////////////    RECURSIVE FACTORIAL SERIES  //////////////////////
@@ -129,4 +129,28 @@ function recFac(n) {
 console.log(recFac(5))
 
 
-/////////////////////////  SUM OF RECUSRSION               ///////////////////////
+/////////////////////////  SUM OF RECUSRSION          ///////////////////////
+
+
+function recSum(n) {
+    if (n === 0) {
+        return 0;
+    }
+
+    return n + (recSum(n - 1))
+
+
+}
+console.log(recSum(5))
+
+///////////////////////🌟 Task: Sum of Digits (Recursion)/////////////
+
+
+function sumDigits(n) {
+    if (n === 0) {
+        return 0;
+    }
+    return (n % 10) + sumDigits(Math.floor(n / 10));
+}
+
+console.log(sumDigits(123)); // Output: 6
